@@ -1,8 +1,10 @@
 #import "ViewController.h"
 #import "CycleScrollView.h"
+#import "URBAlertView.h"
 
 @interface ViewController ()
 @property (nonatomic , retain) CycleScrollView *mainScorllView;
+
 
 @end
 
@@ -11,7 +13,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     UIImage* temp = [UIImage imageNamed:@"icon_39787.png"];
     //temp = [temp resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeTile];
     
@@ -23,16 +26,16 @@
     
     
     NSMutableArray *viewsArray = [@[] mutableCopy];
-  
-    for (int i = 0; i < 2; ++i) {
-        UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"big_energy.jpg"]];
-        UILabel *tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, 320, 100)];
+    NSArray *name = [[NSArray alloc] initWithObjects:@"poster1.jpg",@"poster2.jpg",@"poster3.jpg",@"poster4.jpg",nil];
+    for (int i = 0; i < name.count; ++i) {
+        UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:[name objectAtIndex:i]]];
+        UILabel *tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, 320, 150)];
         tempLabel.backgroundColor = color;
         [viewsArray addObject:tempLabel];
     }
     
-    self.mainScorllView = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 50, 320, 100) animationDuration:2];
-    UIColor *firstView = [UIColor colorWithPatternImage:[UIImage imageNamed:@"big_energy.jpg"]];
+    self.mainScorllView = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 50, 320, 150) animationDuration:2];
+    UIColor *firstView = [UIColor colorWithPatternImage:[UIImage imageNamed:@"poster1.jpg"]];
     self.mainScorllView.backgroundColor = firstView;
     
     self.mainScorllView.totalPagesCount = ^NSInteger(void){
@@ -239,6 +242,28 @@
 - (void)introDidFinish {
     NSLog(@"Intro callback");
         
+}
+- (IBAction)CallPhone:(UIButton *)sender {
+    URBAlertView *alertView = [[URBAlertView alloc] initWithTitle:@"Call Candy"
+														  message:@"Number: 15921266530, Have a try?"
+												cancelButtonTitle:@"Cancel"
+												otherButtonTitles: @"OK", nil];
+
+    //[alertView addButtonWithTitle:@"Close"];
+    //[alertView addButtonWithTitle:@"OK"];
+    [alertView setHandlerBlock:^(NSInteger buttonIndex, URBAlertView *alertView) {
+        [alertView hideWithCompletionBlock:^{
+            NSLog(@"Alert view closed.");
+            
+            UIWebView*callWebview =[[UIWebView alloc] init];
+            NSURL *telURL =[NSURL URLWithString:@"tel:15921266530"];
+            [callWebview loadRequest:[NSURLRequest requestWithURL:telURL]];
+            [self.view addSubview:callWebview];
+
+        }];
+    }];
+    [alertView showWithAnimation:URBAlertAnimationSlideLeft];
+    
 }
 @end
 

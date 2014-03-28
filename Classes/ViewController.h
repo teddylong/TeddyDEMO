@@ -10,5 +10,6 @@
 
 @interface ViewController : UIViewController <EAIntroDelegate>
 @property (strong, nonatomic) IBOutlet UIButton *button1;
+- (IBAction)CallPhone:(UIButton *)sender;
 
 @end
