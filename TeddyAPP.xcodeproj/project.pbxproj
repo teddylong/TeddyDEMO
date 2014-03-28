@@ -26,6 +26,7 @@
 		5513595217E457E200B41A90 /* original@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5513594F17E457E200B41A90 /* original@2x.png */; };
 		5513595317E457E200B41A90 /* supportcat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5513595017E457E200B41A90 /* supportcat@2x.png */; };
 		5513595717E45E5100B41A90 /* introBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5513595617E45E5000B41A90 /* introBg@2x.png */; };
+		9FC47E2C18E5A05000643FAA /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC47E2B18E5A05000643FAA /* Untitled.png */; };
 		D006A3CE18E2BB9F0045BF0B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D006A3CD18E2BB9F0045BF0B /* HomeViewController.m */; };
 		D006A3D118E2BC890045BF0B /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D006A3D018E2BC890045BF0B /* CycleScrollView.m */; };
 		D006A3D418E2BCD90045BF0B /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = D006A3D318E2BCD90045BF0B /* NSTimer+Addition.m */; };
@@ -77,6 +78,7 @@
 		5513594F17E457E200B41A90 /* original@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "original@2x.png"; sourceTree = "<group>"; };
 		5513595017E457E200B41A90 /* supportcat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "supportcat@2x.png"; sourceTree = "<group>"; };
 		5513595617E45E5000B41A90 /* introBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "introBg@2x.png"; sourceTree = "<group>"; };
+		9FC47E2B18E5A05000643FAA /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
 		D006A3CC18E2BB9F0045BF0B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D006A3CD18E2BB9F0045BF0B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D006A3CF18E2BC890045BF0B /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		5513592B17E440C500B41A90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9FC47E2B18E5A05000643FAA /* Untitled.png */,
 				D0F08FE918E5745600A1EF2D /* 40071-84.png */,
 				D0F08FEA18E5745600A1EF2D /* 40075-84.png */,
 				D0F08FE718E573CE00A1EF2D /* 40107-84.png */,
@@ -299,6 +302,7 @@
 				D0F08FD618E559DE00A1EF2D /* 36988-84.png in Resources */,
 				5513593817E440C500B41A90 /* Default-568h@2x.png in Resources */,
 				5513593917E440C500B41A90 /* Default.png in Resources */,
+				9FC47E2C18E5A05000643FAA /* Untitled.png in Resources */,
 				D0F08FC918E5451300A1EF2D /* icon_39814.png in Resources */,
 				D0F08FD418E54E9500A1EF2D /* poster4.jpg in Resources */,
 				D0F08FC718E5451300A1EF2D /* icon_39810.png in Resources */,
@@ -405,6 +409,7 @@
 		5513591F17E4406000B41A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting-files/TeddyAPP-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting-files/TeddyAPP-Info.plist";
@@ -417,6 +422,7 @@
 		5513592017E4406000B41A90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Supporting-files/TeddyAPP-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting-files/TeddyAPP-Info.plist";

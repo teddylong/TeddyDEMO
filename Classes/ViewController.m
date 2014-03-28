@@ -21,7 +21,7 @@
     //UIButton* myBtn = (UIButton*)[self.view viewWithTag:11];
     //[self.button1 setBackgroundColor:[UIColor redColor]];
     [self.button1 setBackgroundImage:temp forState:UIControlStateNormal];
-    [self.button1 setBackgroundColor:[UIColor blueColor]];
+    //[self.button1 setBackgroundColor:[UIColor blueColor]];
     
     
     
