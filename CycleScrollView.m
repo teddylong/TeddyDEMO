@@ -65,6 +65,9 @@
     return self;
 }
 
+#pragma mark -
+#pragma mark - 私有函数
+
 - (void)configContentViews
 {
     [self.scrollView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -83,8 +86,7 @@
     }
     [_scrollView setContentOffset:CGPointMake(_scrollView.frame.size.width, 0)];
 }
-#pragma mark -
-#pragma mark - 私有函数
+
 /**
  *  设置scrollView的content数据源，即contentViews
  */
@@ -174,3 +176,5 @@
  */
 
 @end
+
+

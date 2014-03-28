@@ -9,5 +9,6 @@
 #import "EAIntroView.h"
 
 @interface ViewController : UIViewController <EAIntroDelegate>
+@property (strong, nonatomic) IBOutlet UIButton *button1;
 
 @end

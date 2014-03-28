@@ -1,10 +1,3 @@
-//
-//  ViewController.m
-//  EAIntroView
-//
-//  Created by Evgeny Aleksandrov on 14.09.13.
-//
-
 #import "ViewController.h"
 #import "CycleScrollView.h"
 
@@ -18,31 +11,41 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    UIImage* temp = [UIImage imageNamed:@"icon_39787.png"];
+    //temp = [temp resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeTile];
     
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    //UIButton* myBtn = (UIButton*)[self.view viewWithTag:11];
+    //[self.button1 setBackgroundColor:[UIColor redColor]];
+    [self.button1 setBackgroundImage:temp forState:UIControlStateNormal];
+    [self.button1 setBackgroundColor:[UIColor blueColor]];
+    
+    
+    
     NSMutableArray *viewsArray = [@[] mutableCopy];
-    NSArray *colorArray = @[[UIColor cyanColor],[UIColor blueColor],[UIColor greenColor],[UIColor yellowColor],[UIColor purpleColor]];
-    for (int i = 0; i < 5; ++i) {
-        UILabel *tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 300)];
-        tempLabel.backgroundColor = [(UIColor *)[colorArray objectAtIndex:i] colorWithAlphaComponent:0.5];
+  
+    for (int i = 0; i < 2; ++i) {
+        UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"big_energy.jpg"]];
+        UILabel *tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, 320, 100)];
+        tempLabel.backgroundColor = color;
         [viewsArray addObject:tempLabel];
     }
     
-    self.mainScorllView = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 100, 320, 300) animationDuration:2];
-    self.mainScorllView.backgroundColor = [[UIColor purpleColor] colorWithAlphaComponent:0.1];
+    self.mainScorllView = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 50, 320, 100) animationDuration:2];
+    UIColor *firstView = [UIColor colorWithPatternImage:[UIImage imageNamed:@"big_energy.jpg"]];
+    self.mainScorllView.backgroundColor = firstView;
     
+    self.mainScorllView.totalPagesCount = ^NSInteger(void){
+        return viewsArray.count;
+    };
     self.mainScorllView.fetchContentViewAtIndex = ^UIView *(NSInteger pageIndex){
         return viewsArray[pageIndex];
-    };
-    self.mainScorllView.totalPagesCount = ^NSInteger(void){
-        return 5;
     };
     self.mainScorllView.TapActionBlock = ^(NSInteger pageIndex){
         NSLog(@"点击了第%d个",pageIndex);
     };
     [self.view addSubview:self.mainScorllView];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {

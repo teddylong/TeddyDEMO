@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CycleScrollView : UIView
+{
+   
+}
 
 @property (nonatomic , readonly) UIScrollView *scrollView;
 /**
@@ -19,7 +22,9 @@
  *
  *  @return instance
  */
-- (id)initWithFrame:(CGRect)frame animationDuration:(NSTimeInterval)animationDuration;
+- (id)initWithFrame:(CGRect)frame
+  animationDuration:(NSTimeInterval)animationDuration;
+
 /**
  数据源：获取总的page个数
  **/
