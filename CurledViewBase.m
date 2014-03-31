@@ -35,13 +35,13 @@
         CGRect imageRect = CGRectMake(0.0, 0.0, view.bounds.size.width - 2 * borderWidth,view.bounds.size.height - 2 * borderWidth);
         
         //Only draw image if its size is bigger than the image rect size.
-        if (image.size.width > imageRect.size.width || image.size.height > imageRect.size.height)
-        {
-            UIGraphicsBeginImageContext(imageRect.size);
-            [image drawInRect:imageRect];
-            scaledImage = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
-        }        
+//        if (image.size.width > imageRect.size.width || image.size.height > imageRect.size.height)
+//        {
+//            UIGraphicsBeginImageContext(imageRect.size);
+//            [image drawInRect:imageRect];
+//            scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+//            UIGraphicsEndImageContext();
+//        }        
     }
     return scaledImage;
 }

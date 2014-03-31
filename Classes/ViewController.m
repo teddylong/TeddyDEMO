@@ -36,22 +36,22 @@
     self.view.backgroundColor = viewBg;
     
     [button1 setContentMode:UIViewContentModeScaleToFill];
-    [button1 setImage:[UIImage imageNamed:@"button1.jpg"] borderWidth:5.0 shadowDepth:10.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button1 setImage:[UIImage imageNamed:@"button1.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
     
     //[button1 setImage:[UIImage imageNamed:@"icon_39624.png"] borderWidth:5.0 shadowDepth:10.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateHighlighted];
     [button2 setContentMode:UIViewContentModeScaleToFill];
-    [button2 setImage:[UIImage imageNamed:@"button2.jpg"] borderWidth:5.0 shadowDepth:10.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button2 setImage:[UIImage imageNamed:@"button2.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
     [button3 setContentMode:UIViewContentModeScaleToFill];
-    [button3 setImage:[UIImage imageNamed:@"button3.jpg"] borderWidth:5.0 shadowDepth:10.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button3 setImage:[UIImage imageNamed:@"button3.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
 
     [button4 setContentMode:UIViewContentModeScaleToFill];
-    [button4 setImage:[UIImage imageNamed:@"button4.jpg"] borderWidth:5.0 shadowDepth:10.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button4 setImage:[UIImage imageNamed:@"button4.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
 
     [button5 setContentMode:UIViewContentModeScaleToFill];
-    [button5 setImage:[UIImage imageNamed:@"button5.jpg"] borderWidth:5.0 shadowDepth:10.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button5 setImage:[UIImage imageNamed:@"button5.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
 
     [button6 setContentMode:UIViewContentModeScaleToFill];
-    [button6 setImage:[UIImage imageNamed:@"button6.jpg"] borderWidth:5.0 shadowDepth:10.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button6 setImage:[UIImage imageNamed:@"button6.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
     
 //    CUSFlashLabel *label11 = [[CUSFlashLabel alloc]initWithFrame:CGRectMake(label1.frame.origin.x, label1.frame.origin.y, label1.frame.size.width, label1.frame.size.height)];
 //    [label11 setFont:[UIFont systemFontOfSize:15]];
@@ -302,10 +302,6 @@
     
 }
 
-- (void)buttonClickViewControllerDidCancel:
-(ButtonClickViewController *)controller
-{
-	[self dismissViewControllerAnimated:YES completion:nil];
-}
+
 @end
 
