@@ -62,7 +62,7 @@
 
     
     NSMutableArray *viewsArray = [@[] mutableCopy];
-    NSArray *name = [[NSArray alloc] initWithObjects:@"poster1.jpg",@"poster2.jpg",@"poster3.jpg",@"poster4.jpg",nil];
+    NSArray *name = [[NSArray alloc] initWithObjects:@"pre11.jpg",@"pre22.jpg",@"pre33.jpg",@"pre44.jpg",@"pre55.jpg",@"pre66.jpg",nil];
     for (int i = 0; i < name.count; ++i) {
         UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:[name objectAtIndex:i]]];
         UILabel *tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, 320, 150)];
@@ -71,7 +71,7 @@
     }
     
     self.mainScorllView = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 50, 320, 150) animationDuration:2];
-    UIColor *firstView = [UIColor colorWithPatternImage:[UIImage imageNamed:@"poster1.jpg"]];
+    UIColor *firstView = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pre11.jpg"]];
     self.mainScorllView.backgroundColor = firstView;
     
     self.mainScorllView.totalPagesCount = ^NSInteger(void){
@@ -84,6 +84,53 @@
         NSLog(@"点击了第%d个",pageIndex);
     };
     [self.view addSubview:self.mainScorllView];
+    
+}
+
+- (UIImage *)thumbnailWithImageWithoutScale:(UIImage *)image size:(CGSize)asize
+
+{
+    
+    UIImage *newimage;
+    if (nil == image)
+    {
+        newimage = nil;
+    }
+    else
+    {
+        CGSize oldsize = image.size;
+        CGRect rect;
+        if (asize.width/asize.height > oldsize.width/oldsize.height)
+        {
+            rect.size.width = asize.height*oldsize.width/oldsize.height;
+            rect.size.height = asize.height;
+            rect.origin.x = (asize.width - rect.size.width)/2;
+            rect.origin.y = 0;
+        }
+        else
+        {
+            rect.size.width = asize.width;
+            rect.size.height = asize.width*oldsize.height/oldsize.width;
+            rect.origin.x = 0;
+            rect.origin.y = (asize.height - rect.size.height)/2;
+        }
+        UIGraphicsBeginImageContext(asize);
+        
+        CGContextRef context = UIGraphicsGetCurrentContext();
+        
+        CGContextSetFillColorWithColor(context, [[UIColor clearColor] CGColor]);
+        
+        UIRectFill(CGRectMake(0, 0, asize.width, asize.height));//clear background
+        
+        [image drawInRect:rect];
+        
+        newimage = UIGraphicsGetImageFromCurrentImageContext();
+        
+        UIGraphicsEndImageContext();
+        
+    }
+    
+    return newimage;
     
 }
 
