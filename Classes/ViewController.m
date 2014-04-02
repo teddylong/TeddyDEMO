@@ -25,6 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [NSThread sleepForTimeInterval:1.5];
     //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     //UIImage* temp = [UIImage imageNamed:@"icon_39787.png"];
     //temp = [temp resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeTile];
@@ -87,71 +88,11 @@
     
 }
 
-- (UIImage *)thumbnailWithImageWithoutScale:(UIImage *)image size:(CGSize)asize
 
-{
-    
-    UIImage *newimage;
-    if (nil == image)
-    {
-        newimage = nil;
-    }
-    else
-    {
-        CGSize oldsize = image.size;
-        CGRect rect;
-        if (asize.width/asize.height > oldsize.width/oldsize.height)
-        {
-            rect.size.width = asize.height*oldsize.width/oldsize.height;
-            rect.size.height = asize.height;
-            rect.origin.x = (asize.width - rect.size.width)/2;
-            rect.origin.y = 0;
-        }
-        else
-        {
-            rect.size.width = asize.width;
-            rect.size.height = asize.width*oldsize.height/oldsize.width;
-            rect.origin.x = 0;
-            rect.origin.y = (asize.height - rect.size.height)/2;
-        }
-        UIGraphicsBeginImageContext(asize);
-        
-        CGContextRef context = UIGraphicsGetCurrentContext();
-        
-        CGContextSetFillColorWithColor(context, [[UIColor clearColor] CGColor]);
-        
-        UIRectFill(CGRectMake(0, 0, asize.width, asize.height));//clear background
-        
-        [image drawInRect:rect];
-        
-        newimage = UIGraphicsGetImageFromCurrentImageContext();
-        
-        UIGraphicsEndImageContext();
-        
-    }
-    
-    return newimage;
-    
-}
 
 - (void)viewDidAppear:(BOOL)animated {
     // all settings are basic, pages with custom packgrounds, title image on each page
-    [self showIntroWithCrossDissolve];
-    
-    // all settings are basic, introview with custom background, title image on each page
-    //[self showBasicIntroWithBg];
-    
-    // all settings are basic, introview with custom background color and fixed title image
-    //[self showBasicIntroWithFixedTitleView];
-    
-    // all settings are custom
-    //[self showCustomIntro];
-    
-    // using customView property of EAIntroPage
-    //[self showIntroWithCustomView];
-    
-    // separate pages initialization
-    //[self showIntroWithSeparatePagesInit];
+    // [self showIntroWithCrossDissolve];
 }
 
 - (void)showIntroWithCrossDissolve {
@@ -348,7 +289,6 @@
     [alertView showWithAnimation:URBAlertAnimationSlideLeft];
     
 }
-
 
 @end
 
