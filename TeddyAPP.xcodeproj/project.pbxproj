@@ -50,6 +50,8 @@
 		D081A0A118E9179800AD8B00 /* button6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D081A09C18E9179800AD8B00 /* button6.jpg */; };
 		D081A0A318E9272800AD8B00 /* stardust.png in Resources */ = {isa = PBXBuildFile; fileRef = D081A0A218E9272800AD8B00 /* stardust.png */; };
 		D081A0A718E935B500AD8B00 /* CUSFlashLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D081A0A618E935B500AD8B00 /* CUSFlashLabel.m */; };
+		D0C93B3518ED3ED300354A57 /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C93B3418ED3ED300354A57 /* FRDLivelyButton.m */; };
+		D0C93B4018ED689700354A57 /* arrow 18.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C93B3F18ED689700354A57 /* arrow 18.png */; };
 		D0F08FD618E559DE00A1EF2D /* 36988-84.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F08FD518E559DE00A1EF2D /* 36988-84.png */; };
 		D0F08FDA18E55B9400A1EF2D /* URBAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F08FD918E55B9400A1EF2D /* URBAlertView.m */; };
 		D0F08FDC18E55FCC00A1EF2D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F08FDB18E55FCC00A1EF2D /* Accelerate.framework */; };
@@ -119,6 +121,9 @@
 		D081A0A218E9272800AD8B00 /* stardust.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stardust.png; sourceTree = "<group>"; };
 		D081A0A518E935B500AD8B00 /* CUSFlashLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUSFlashLabel.h; sourceTree = "<group>"; };
 		D081A0A618E935B500AD8B00 /* CUSFlashLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUSFlashLabel.m; sourceTree = "<group>"; };
+		D0C93B3418ED3ED300354A57 /* FRDLivelyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDLivelyButton.m; sourceTree = "<group>"; };
+		D0C93B3618ED3EDE00354A57 /* FRDLivelyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDLivelyButton.h; sourceTree = "<group>"; };
+		D0C93B3F18ED689700354A57 /* arrow 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow 18.png"; sourceTree = "<group>"; };
 		D0F08FD518E559DE00A1EF2D /* 36988-84.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "36988-84.png"; sourceTree = "<group>"; };
 		D0F08FD818E55B9400A1EF2D /* URBAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URBAlertView.h; sourceTree = "<group>"; };
 		D0F08FD918E55B9400A1EF2D /* URBAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBAlertView.m; sourceTree = "<group>"; };
@@ -150,6 +155,7 @@
 		551358F217E4405F00B41A90 = {
 			isa = PBXGroup;
 			children = (
+				D0C93B3318ED3EBA00354A57 /* LivelyButton */,
 				D081A0A418E9359D00AD8B00 /* MaskLabel */,
 				D081A08C18E90AB600AD8B00 /* curledView */,
 				D0F08FD718E55B7800A1EF2D /* AlertView */,
@@ -211,6 +217,7 @@
 		5513592B17E440C500B41A90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0C93B3F18ED689700354A57 /* arrow 18.png */,
 				9FBE7ACC18EC35EC007F6371 /* StartImg.png */,
 				9FBE7AC818EC3496007F6371 /* Images.xcassets */,
 				D07990A318EAC31E00AD13BA /* pre22.jpg */,
@@ -289,6 +296,15 @@
 				D081A0A618E935B500AD8B00 /* CUSFlashLabel.m */,
 			);
 			name = MaskLabel;
+			sourceTree = "<group>";
+		};
+		D0C93B3318ED3EBA00354A57 /* LivelyButton */ = {
+			isa = PBXGroup;
+			children = (
+				D0C93B3618ED3EDE00354A57 /* FRDLivelyButton.h */,
+				D0C93B3418ED3ED300354A57 /* FRDLivelyButton.m */,
+			);
+			name = LivelyButton;
 			sourceTree = "<group>";
 		};
 		D0F08FD718E55B7800A1EF2D /* AlertView */ = {
@@ -370,6 +386,7 @@
 				D0F08FEB18E5745600A1EF2D /* 40071-84.png in Resources */,
 				D0F08FE818E573CE00A1EF2D /* 40107-84.png in Resources */,
 				9FBE7ACD18EC35EC007F6371 /* StartImg.png in Resources */,
+				D0C93B4018ED689700354A57 /* arrow 18.png in Resources */,
 				D07990A118EAC21E00AD13BA /* pre55.jpg in Resources */,
 				D079909F18EAC21E00AD13BA /* pre33.jpg in Resources */,
 				5513594217E440EE00B41A90 /* 3.png in Resources */,
@@ -400,6 +417,7 @@
 				9F7ADA7518E9A20C00543DE0 /* ButtonClickViewController.m in Sources */,
 				5513593617E440C500B41A90 /* EAIntroPage.m in Sources */,
 				D0F08FDA18E55B9400A1EF2D /* URBAlertView.m in Sources */,
+				D0C93B3518ED3ED300354A57 /* FRDLivelyButton.m in Sources */,
 				5513593717E440C500B41A90 /* EAIntroView.m in Sources */,
 				5513593D17E440C500B41A90 /* main.m in Sources */,
 				D006A3D418E2BCD90045BF0B /* NSTimer+Addition.m in Sources */,

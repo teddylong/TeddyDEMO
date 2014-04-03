@@ -8,7 +8,10 @@
 
 #import "ButtonClickViewController.h"
 
+
 @interface ButtonClickViewController ()
+
+
 
 @end
 
@@ -25,8 +28,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,7 +48,7 @@
 }
 */
 
-- (IBAction)button1:(UIButton *)sender {
+- (IBAction)backBtn:(UIButton *)sender {
     [self dismissModalViewControllerAnimated:YES];
     //[self.navigationController popViewControllerAnimated:YES];
 }

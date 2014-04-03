@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ButtonClickViewController : UIViewController
-- (IBAction)button1:(UIButton *)sender;
+- (IBAction)backBtn:(UIButton *)sender;
 
 @end
