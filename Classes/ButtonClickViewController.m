@@ -11,11 +11,11 @@
 
 @interface ButtonClickViewController ()
 
-
-
 @end
 
 @implementation ButtonClickViewController
+@synthesize valueLabeltext;
+@synthesize valueLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +29,7 @@
 - (void)viewDidLoad
 {
         // Do any additional setup after loading the view.
+    valueLabel.text = valueLabeltext;
 }
 
 - (void)didReceiveMemoryWarning

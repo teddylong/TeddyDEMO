@@ -43,7 +43,7 @@
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZvN-pP-fiG" kind="modal" id="pqu-tP-dpd"/>
+                                    <segue destination="ZvN-pP-fiG" kind="modal" identifier="sequeBtn1" id="pqu-tP-dpd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqw-ix-SI2">
@@ -53,7 +53,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="button2.jpg"/>
                                 <connections>
-                                    <segue destination="ZvN-pP-fiG" kind="modal" id="FIb-Er-Gta"/>
+                                    <segue destination="ZvN-pP-fiG" kind="modal" identifier="sequeBtn2" id="FIb-Er-Gta"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayw-hM-trt">
@@ -63,6 +63,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <size key="titleShadowOffset" width="13" height="0.0"/>
                                 <state key="normal" image="button4.jpg"/>
+                                <connections>
+                                    <segue destination="ZvN-pP-fiG" kind="modal" identifier="sequeBtn4" id="BUz-6a-t8F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yje-zH-niY">
                                 <rect key="frame" x="220" y="220" width="80" height="80"/>
@@ -70,6 +73,9 @@
                                 <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="button3.jpg"/>
+                                <connections>
+                                    <segue destination="ZvN-pP-fiG" kind="modal" identifier="sequeBtn3" id="R78-nW-mai"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JM-vE-CnS">
                                 <rect key="frame" x="120" y="325" width="80" height="80"/>
@@ -77,6 +83,9 @@
                                 <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="button5.jpg"/>
+                                <connections>
+                                    <segue destination="ZvN-pP-fiG" kind="modal" identifier="sequeBtn5" id="mhG-MA-MmX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvn-hL-aRW">
                                 <rect key="frame" x="220" y="325" width="80" height="80"/>
@@ -84,6 +93,9 @@
                                 <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="button6.jpg"/>
+                                <connections>
+                                    <segue destination="ZvN-pP-fiG" kind="modal" identifier="sequeBtn6" id="7XZ-Yg-qBt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Teddy App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csc-Cz-tzt">
                                 <rect key="frame" x="115" y="25" width="90" height="20"/>
@@ -225,15 +237,25 @@
                                     <action selector="backBtn:" destination="ZvN-pP-fiG" eventType="touchUpInside" id="VVy-c6-FWn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL3-kL-tEh">
+                                <rect key="frame" x="96" y="237" width="128" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="valueLabel" destination="jL3-kL-tEh" id="MVf-HP-AeX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmo-tJ-3Oa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="481" y="-741"/>
+            <point key="canvasLocation" x="329" y="-741"/>
         </scene>
     </scenes>
     <resources>
@@ -255,6 +277,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pqu-tP-dpd"/>
+        <segue reference="7XZ-Yg-qBt"/>
     </inferredMetricsTieBreakers>
 </document>

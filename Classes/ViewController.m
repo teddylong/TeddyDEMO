@@ -6,6 +6,7 @@
 #import "UIImageView+Curled.h"
 
 #import "CUSFlashLabel.h"
+#import "ButtonClickViewController.h"
 
 @interface ViewController ()
 @property (nonatomic , retain) CycleScrollView *mainScorllView;
@@ -22,6 +23,7 @@
 @synthesize button6;
 @synthesize label1;
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -37,22 +39,22 @@
     self.view.backgroundColor = viewBg;
     
     [button1 setContentMode:UIViewContentModeScaleToFill];
-    [button1 setImage:[UIImage imageNamed:@"button1.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button1 setImage:[UIImage imageNamed:@"button1.jpg"] borderWidth:3.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
     
     //[button1 setImage:[UIImage imageNamed:@"icon_39624.png"] borderWidth:5.0 shadowDepth:10.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateHighlighted];
     [button2 setContentMode:UIViewContentModeScaleToFill];
-    [button2 setImage:[UIImage imageNamed:@"button2.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button2 setImage:[UIImage imageNamed:@"button2.jpg"] borderWidth:3.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
     [button3 setContentMode:UIViewContentModeScaleToFill];
-    [button3 setImage:[UIImage imageNamed:@"button3.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button3 setImage:[UIImage imageNamed:@"button3.jpg"] borderWidth:3.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
 
     [button4 setContentMode:UIViewContentModeScaleToFill];
-    [button4 setImage:[UIImage imageNamed:@"button4.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button4 setImage:[UIImage imageNamed:@"button4.jpg"] borderWidth:3.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
 
     [button5 setContentMode:UIViewContentModeScaleToFill];
-    [button5 setImage:[UIImage imageNamed:@"button5.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button5 setImage:[UIImage imageNamed:@"button5.jpg"] borderWidth:3.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
 
     [button6 setContentMode:UIViewContentModeScaleToFill];
-    [button6 setImage:[UIImage imageNamed:@"button6.jpg"] borderWidth:5.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
+    [button6 setImage:[UIImage imageNamed:@"button6.jpg"] borderWidth:3.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
     
 //    CUSFlashLabel *label11 = [[CUSFlashLabel alloc]initWithFrame:CGRectMake(label1.frame.origin.x, label1.frame.origin.y, label1.frame.size.width, label1.frame.size.height)];
 //    [label11 setFont:[UIFont systemFontOfSize:15]];
@@ -267,6 +269,8 @@
     NSLog(@"Intro callback");
         
 }
+
+
 - (IBAction)CallPhone:(UIButton *)sender {
     URBAlertView *alertView = [[URBAlertView alloc] initWithTitle:@"Call Candy"
 														  message:@"Number: 15921266530, Have a try?"
@@ -289,6 +293,35 @@
     [alertView showWithAnimation:URBAlertAnimationSlideLeft];
     
 }
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ButtonClickViewController *controller = (ButtonClickViewController *)segue.destinationViewController;
+    controller = (ButtonClickViewController *)segue.destinationViewController;
+    if([segue.identifier isEqualToString:@"sequeBtn1"])
+    {
+        controller.valueLabeltext = @"Button One";
+    }
+    if([segue.identifier isEqualToString:@"sequeBtn2"])
+    {
+        controller.valueLabeltext = @"Button Two";
+    }
+    if([segue.identifier isEqualToString:@"sequeBtn3"])
+    {
+        controller.valueLabeltext = @"Button Three";
+    }
+    if([segue.identifier isEqualToString:@"sequeBtn4"])
+    {
+        controller.valueLabeltext = @"Button Four";
+    }
+    if([segue.identifier isEqualToString:@"sequeBtn5"])
+    {
+        controller.valueLabeltext = @"Button Five";
+    }
+    if([segue.identifier isEqualToString:@"sequeBtn6"])
+    {
+        controller.valueLabeltext = @"Button Six";
+    }
+   
+}
 
 @end
-

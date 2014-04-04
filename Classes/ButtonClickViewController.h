@@ -10,5 +10,7 @@
 
 @interface ButtonClickViewController : UIViewController
 - (IBAction)backBtn:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
+@property (weak, nonatomic) NSString *valueLabeltext;
 
 @end
