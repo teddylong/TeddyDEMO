@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HVTableView.h"
 
-@interface ButtonClickViewController : UIViewController
+@interface ButtonClickViewController : UIViewController<HVTableViewDelegate, HVTableViewDataSource>
+{
+    HVTableView* myTable;
+	NSArray* cellTitles;
+}
 - (IBAction)backBtn:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *valueLabel;
 @property (weak, nonatomic) NSString *valueLabeltext;

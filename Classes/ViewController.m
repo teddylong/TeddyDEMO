@@ -38,6 +38,14 @@
     UIColor *viewBg = [UIColor colorWithPatternImage:[UIImage imageNamed:@"stardust.png"]];
     self.view.backgroundColor = viewBg;
     
+    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:[UIImage imageNamed:@"home-7.png"] selectedImage:[UIImage imageNamed:@"home-7.png"]];
+    self.tabBarItem.badgeValue = @"N";
+    
+    
+    
+    //self.tabBarController.tabBar.tintColor = [UIColor redColor];
+    
+    
     [button1 setContentMode:UIViewContentModeScaleToFill];
     [button1 setImage:[UIImage imageNamed:@"button1.jpg"] borderWidth:3.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
     
@@ -68,12 +76,12 @@
     NSArray *name = [[NSArray alloc] initWithObjects:@"pre11.jpg",@"pre22.jpg",@"pre33.jpg",@"pre44.jpg",@"pre55.jpg",@"pre66.jpg",nil];
     for (int i = 0; i < name.count; ++i) {
         UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:[name objectAtIndex:i]]];
-        UILabel *tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, 320, 150)];
+        UILabel *tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 60, 320, 150)];
         tempLabel.backgroundColor = color;
         [viewsArray addObject:tempLabel];
     }
     
-    self.mainScorllView = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 50, 320, 150) animationDuration:2];
+    self.mainScorllView = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 60, 320, 150) animationDuration:2];
     UIColor *firstView = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pre11.jpg"]];
     self.mainScorllView.backgroundColor = firstView;
     
