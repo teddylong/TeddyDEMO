@@ -125,7 +125,7 @@
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
 		cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		
-		UIImageView* expandGlyph = [[UIImageView alloc] initWithFrame:CGRectMake(280, 45, 15, 10)];
+		UIImageView* expandGlyph = [[UIImageView alloc] initWithFrame:CGRectMake(290, 10, 15, 10)];
 		expandGlyph.image = [UIImage imageNamed:@"expandGlyph.png"];
 		expandGlyph.tag = 7;
 		[cell.contentView addSubview:expandGlyph];
@@ -143,6 +143,7 @@
 	NSString* bundlePath = [[NSBundle mainBundle] bundlePath];
 	NSString* imageFileName = [NSString stringWithFormat:@"%d.jpg", indexPath.row % 10 + 1];
 	cell.imageView.image = [[UIImage alloc] initWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", bundlePath, imageFileName]];
+    
 	
 	if (!isExpanded) //prepare the cell as if it was collapsed! (without any animation!)
 	{
