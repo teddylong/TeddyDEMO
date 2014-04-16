@@ -307,27 +307,27 @@
     controller = (ButtonClickViewController *)segue.destinationViewController;
     if([segue.identifier isEqualToString:@"sequeBtn1"])
     {
-        controller.valueLabeltext = @"Button One";
+        controller.valueLabeltext = @"Play";
     }
     if([segue.identifier isEqualToString:@"sequeBtn2"])
     {
-        controller.valueLabeltext = @"Button Two";
+        controller.valueLabeltext = @"Walk";
     }
     if([segue.identifier isEqualToString:@"sequeBtn3"])
     {
-        controller.valueLabeltext = @"Button Three";
+        controller.valueLabeltext = @"Med Care";
     }
     if([segue.identifier isEqualToString:@"sequeBtn4"])
     {
-        controller.valueLabeltext = @"Button Four";
+        controller.valueLabeltext = @"Clean";
     }
     if([segue.identifier isEqualToString:@"sequeBtn5"])
     {
-        controller.valueLabeltext = @"Button Five";
+        controller.valueLabeltext = @"Salon";
     }
     if([segue.identifier isEqualToString:@"sequeBtn6"])
     {
-        controller.valueLabeltext = @"Button Six";
+        controller.valueLabeltext = @"Board";
     }
    
 }

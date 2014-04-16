@@ -31,19 +31,19 @@
 {
 	[[cell.contentView viewWithTag:10] removeFromSuperview];
 	UIButton* purchaseButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	purchaseButton.frame = CGRectMake(180, 150, 120, 40);
+	purchaseButton.frame = CGRectMake(125, 95, 80, 20);
 	purchaseButton.alpha = 0;
 	[purchaseButton setTitle:@"Purchase Now!" forState:UIControlStateNormal];
-	purchaseButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-LightItalic" size:13];
+	purchaseButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-LightItalic" size:11];
 	purchaseButton.backgroundColor = [UIColor grayColor];
 	[purchaseButton setTintColor:[UIColor whiteColor]];
 	[cell.contentView addSubview:purchaseButton];
 	purchaseButton.tag = 10;
 	
 	[UIView animateWithDuration:.5 animations:^{
-		cell.detailTextLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-		purchaseButton.frame = CGRectMake(180, 150, 120, 40);
-		purchaseButton.alpha = 1;
+		cell.detailTextLabel.text = @"If I am your style, CHOOSE ME!";
+		purchaseButton.frame = CGRectMake(125, 95, 80, 20);
+		purchaseButton.alpha = 0.8;
 		[cell.contentView viewWithTag:7].transform = CGAffineTransformMakeRotation(3.14);
 	}];
 }
@@ -66,15 +66,16 @@
 {
 	//you can define different heights for each cell. (then you probably have to calculate the height or e.g. read pre-calculated heights from an array
 	if (isexpanded)
-		return 200;
+		return 125;
 	
-	return 100;
+	return 75;
 }
 
 - (void)viewDidLoad
 {
  
     valueLabel.text = valueLabeltext;
+    
     myTable = [[HVTableView alloc] initWithFrame:CGRectMake(0, 81, 320, 440) expandOnlyOneCell:YES enableAutoScroll:YES];
     myTable.HVTableViewDelegate = self;
     myTable.HVTableViewDataSource = self;
@@ -83,13 +84,13 @@
     [myTable setTranslatesAutoresizingMaskIntoConstraints:NO];
     
     NSLayoutConstraint* myTableWidthCon = [NSLayoutConstraint constraintWithItem:myTable attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:320];
-    NSLayoutConstraint* myTableBottomCon = [NSLayoutConstraint constraintWithItem:myTable attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:50];
+    NSLayoutConstraint* myTableBottomCon = [NSLayoutConstraint constraintWithItem:myTable attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
    NSLayoutConstraint* myTableCenterXCon = [NSLayoutConstraint constraintWithItem:myTable attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0];
     NSLayoutConstraint* myTableTopCon = [NSLayoutConstraint constraintWithItem:myTable attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:81];
     [self.view addConstraints:@[myTableBottomCon, myTableCenterXCon, myTableWidthCon, myTableTopCon]];
     
     ////////////storing the title labels in an array so we will use it in cellForRowAtIndexPath
-    cellTitles = @[@"Twitowie", @"Bill Greyskull", @"Moonglampers", @"Psit", @"Duncan WJ Palmer", @"Sajuma", @"Victor_lee", @"Jugger-naut", @"Javiersanagustin", @"Velouria!"];
+    cellTitles = @[@"Teddy", @"Candy", @"Chris", @"Septen", @"MikeD", @"Andy", @"Apirl", @"Soda", @"Tayor",@"Whatever"];
 
     
 }
@@ -147,12 +148,12 @@
 	
 	if (!isExpanded) //prepare the cell as if it was collapsed! (without any animation!)
 	{
-		cell.detailTextLabel.text = @"Lorem ipsum dolor sit amet";
+		cell.detailTextLabel.text = @"See More...";
 		[cell.contentView viewWithTag:7].transform = CGAffineTransformMakeRotation(0);
 	}
 	else ///prepare the cell as if it was expanded! (without any animation!)
 	{
-		cell.detailTextLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+		cell.detailTextLabel.text = @"If I am your style, CHOOSE ME!";
 		[cell.contentView viewWithTag:7].transform = CGAffineTransformMakeRotation(3.14);
 		
 		[[cell.contentView viewWithTag:10] removeFromSuperview];
