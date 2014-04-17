@@ -67,7 +67,7 @@
         MyOrder *order = [[MyOrder alloc] init];
         order.name = @"$1/Month";
         order.desc = @"For one month, pay one dollar.";
-        UIImage* image = [UIImage imageNamed:@"teddy.jpg"];
+        UIImage* image = [UIImage imageNamed:@"teddy.jpeg"];
         order.image = UIImageJPEGRepresentation(image, 1.0);
         order.lastmodifytime = [NSDate date];
         
@@ -89,7 +89,7 @@
         MyOrder *order = [[MyOrder alloc] init];
         order.name = @"$10/Year";
         order.desc = @"For one year, pay ten dollar.";
-        UIImage* image = [UIImage imageNamed:@"candy.jpg"];
+        UIImage* image = [UIImage imageNamed:@"candy.jpeg"];
         order.image = UIImageJPEGRepresentation(image, 1.0);
         order.lastmodifytime = [NSDate date];
         

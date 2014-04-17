@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 T&C. All rights reserved.
 //
 
-#import <STDbKit/STDbObject.h>
+#import "STDbObject.h"
 
 @interface MyOrder : STDbObject
 

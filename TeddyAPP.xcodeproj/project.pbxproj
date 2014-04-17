@@ -29,6 +29,12 @@
 		9F7ADA7518E9A20C00543DE0 /* ButtonClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7ADA7418E9A20C00543DE0 /* ButtonClickViewController.m */; };
 		9F7ADA7718E9B7DF00543DE0 /* button3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F7ADA7618E9B7DF00543DE0 /* button3@2x.jpg */; };
 		9F7ADA7B18E9CAF000543DE0 /* button2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F7ADA7A18E9CAF000543DE0 /* button2.jpg */; };
+		9F7D7C18190012EA00563523 /* STDb.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D7C11190012EA00563523 /* STDb.m */; };
+		9F7D7C19190012EA00563523 /* STDbHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D7C13190012EA00563523 /* STDbHandle.m */; };
+		9F7D7C1A190012EA00563523 /* STDbObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D7C16190012EA00563523 /* STDbObject.m */; };
+		9F7D7C1D1900130C00563523 /* NSDate+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D7C1C1900130C00563523 /* NSDate+Exts.m */; };
+		9F7D7C201900139100563523 /* candy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9F7D7C1E1900139100563523 /* candy.jpeg */; };
+		9F7D7C211900139100563523 /* teddy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9F7D7C1F1900139100563523 /* teddy.jpeg */; };
 		9FBE7AC918EC3496007F6371 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE7AC818EC3496007F6371 /* Images.xcassets */; };
 		9FBE7ACD18EC35EC007F6371 /* StartImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE7ACC18EC35EC007F6371 /* StartImg.png */; };
 		9FC47E2C18E5A05000643FAA /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC47E2B18E5A05000643FAA /* Untitled.png */; };
@@ -36,10 +42,6 @@
 		D006A3D118E2BC890045BF0B /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D006A3D018E2BC890045BF0B /* CycleScrollView.m */; };
 		D006A3D418E2BCD90045BF0B /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = D006A3D318E2BCD90045BF0B /* NSTimer+Addition.m */; };
 		D0123CC318FF935D00E0B302 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0123CC218FF935D00E0B302 /* libsqlite3.dylib */; };
-		D0123CCD18FF93D500E0B302 /* STDb.m in Sources */ = {isa = PBXBuildFile; fileRef = D0123CC618FF93D500E0B302 /* STDb.m */; };
-		D0123CCE18FF93D500E0B302 /* STDbHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D0123CC818FF93D500E0B302 /* STDbHandle.m */; };
-		D0123CCF18FF93D500E0B302 /* STDbObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D0123CCB18FF93D500E0B302 /* STDbObject.m */; };
-		D0123CD318FF94AB00E0B302 /* NSDate+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = D0123CD218FF94AB00E0B302 /* NSDate+Exts.m */; };
 		D0123CD618FF953900E0B302 /* MyOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0123CD518FF953900E0B302 /* MyOrder.m */; };
 		D0123CD918FF9F7300E0B302 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0123CD818FF9F7300E0B302 /* OrderViewController.m */; };
 		D051167B18F4F88500511B9C /* compass-direction-7.png in Resources */ = {isa = PBXBuildFile; fileRef = D051167818F4F88500511B9C /* compass-direction-7.png */; };
@@ -66,8 +68,6 @@
 		D081A0A118E9179800AD8B00 /* button6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D081A09C18E9179800AD8B00 /* button6.jpg */; };
 		D081A0A318E9272800AD8B00 /* stardust.png in Resources */ = {isa = PBXBuildFile; fileRef = D081A0A218E9272800AD8B00 /* stardust.png */; };
 		D081A0A718E935B500AD8B00 /* CUSFlashLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D081A0A618E935B500AD8B00 /* CUSFlashLabel.m */; };
-		D097C9C618FFCA8300B7E754 /* candy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D097C9C418FFCA8300B7E754 /* candy.jpg */; };
-		D097C9C718FFCA8300B7E754 /* teddy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D097C9C518FFCA8300B7E754 /* teddy.jpg */; };
 		D097C9CA18FFDC3B00B7E754 /* OrderDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = D097C9C918FFDC3B00B7E754 /* OrderDetailController.m */; };
 		D0C93B3518ED3ED300354A57 /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C93B3418ED3ED300354A57 /* FRDLivelyButton.m */; };
 		D0C93B4018ED689700354A57 /* arrow 18.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C93B3F18ED689700354A57 /* arrow 18.png */; };
@@ -112,6 +112,18 @@
 		9F7ADA7418E9A20C00543DE0 /* ButtonClickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonClickViewController.m; sourceTree = "<group>"; };
 		9F7ADA7618E9B7DF00543DE0 /* button3@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "button3@2x.jpg"; sourceTree = "<group>"; };
 		9F7ADA7A18E9CAF000543DE0 /* button2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = button2.jpg; sourceTree = "<group>"; };
+		9F7D7C10190012EA00563523 /* STDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDb.h; sourceTree = "<group>"; };
+		9F7D7C11190012EA00563523 /* STDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDb.m; sourceTree = "<group>"; };
+		9F7D7C12190012EA00563523 /* STDbHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDbHandle.h; sourceTree = "<group>"; };
+		9F7D7C13190012EA00563523 /* STDbHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDbHandle.m; sourceTree = "<group>"; };
+		9F7D7C14190012EA00563523 /* STDbKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDbKit.h; sourceTree = "<group>"; };
+		9F7D7C15190012EA00563523 /* STDbObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDbObject.h; sourceTree = "<group>"; };
+		9F7D7C16190012EA00563523 /* STDbObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDbObject.m; sourceTree = "<group>"; };
+		9F7D7C17190012EA00563523 /* STDbVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDbVersion.h; sourceTree = "<group>"; };
+		9F7D7C1B1900130C00563523 /* NSDate+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Exts.h"; sourceTree = "<group>"; };
+		9F7D7C1C1900130C00563523 /* NSDate+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Exts.m"; sourceTree = "<group>"; };
+		9F7D7C1E1900139100563523 /* candy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = candy.jpeg; sourceTree = "<group>"; };
+		9F7D7C1F1900139100563523 /* teddy.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teddy.jpeg; sourceTree = "<group>"; };
 		9FBE7AC818EC3496007F6371 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TeddyAPP/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		9FBE7ACC18EC35EC007F6371 /* StartImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartImg.png; sourceTree = "<group>"; };
 		9FC47E2B18E5A05000643FAA /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
@@ -122,16 +134,6 @@
 		D006A3D218E2BCD90045BF0B /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
 		D006A3D318E2BCD90045BF0B /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
 		D0123CC218FF935D00E0B302 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		D0123CC518FF93D500E0B302 /* STDb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STDb.h; path = "../STDbObject-2/STDbKit/STDb/STDb.h"; sourceTree = "<group>"; };
-		D0123CC618FF93D500E0B302 /* STDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STDb.m; path = "../STDbObject-2/STDbKit/STDb/STDb.m"; sourceTree = "<group>"; };
-		D0123CC718FF93D500E0B302 /* STDbHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STDbHandle.h; path = "../STDbObject-2/STDbKit/STDb/STDbHandle.h"; sourceTree = "<group>"; };
-		D0123CC818FF93D500E0B302 /* STDbHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STDbHandle.m; path = "../STDbObject-2/STDbKit/STDb/STDbHandle.m"; sourceTree = "<group>"; };
-		D0123CC918FF93D500E0B302 /* STDbKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STDbKit.h; path = "../STDbObject-2/STDbKit/STDb/STDbKit.h"; sourceTree = "<group>"; };
-		D0123CCA18FF93D500E0B302 /* STDbObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STDbObject.h; path = "../STDbObject-2/STDbKit/STDb/STDbObject.h"; sourceTree = "<group>"; };
-		D0123CCB18FF93D500E0B302 /* STDbObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STDbObject.m; path = "../STDbObject-2/STDbKit/STDb/STDbObject.m"; sourceTree = "<group>"; };
-		D0123CCC18FF93D500E0B302 /* STDbVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STDbVersion.h; path = "../STDbObject-2/STDbKit/STDb/STDbVersion.h"; sourceTree = "<group>"; };
-		D0123CD118FF94AB00E0B302 /* NSDate+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Exts.h"; path = "../STDbObject-2/STDbKitDemo/NSDate+Exts/NSDate+Exts.h"; sourceTree = "<group>"; };
-		D0123CD218FF94AB00E0B302 /* NSDate+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Exts.m"; path = "../STDbObject-2/STDbKitDemo/NSDate+Exts/NSDate+Exts.m"; sourceTree = "<group>"; };
 		D0123CD418FF953900E0B302 /* MyOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrder.h; sourceTree = "<group>"; };
 		D0123CD518FF953900E0B302 /* MyOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrder.m; sourceTree = "<group>"; };
 		D0123CD718FF9F7300E0B302 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
@@ -165,8 +167,6 @@
 		D081A0A218E9272800AD8B00 /* stardust.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stardust.png; sourceTree = "<group>"; };
 		D081A0A518E935B500AD8B00 /* CUSFlashLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CUSFlashLabel.h; sourceTree = "<group>"; };
 		D081A0A618E935B500AD8B00 /* CUSFlashLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CUSFlashLabel.m; sourceTree = "<group>"; };
-		D097C9C418FFCA8300B7E754 /* candy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = candy.jpg; path = ../../candy.jpg; sourceTree = "<group>"; };
-		D097C9C518FFCA8300B7E754 /* teddy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = teddy.jpg; path = ../../teddy.jpg; sourceTree = "<group>"; };
 		D097C9C818FFDC3B00B7E754 /* OrderDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailController.h; sourceTree = "<group>"; };
 		D097C9C918FFDC3B00B7E754 /* OrderDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailController.m; sourceTree = "<group>"; };
 		D0C93B3418ED3ED300354A57 /* FRDLivelyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDLivelyButton.m; sourceTree = "<group>"; };
@@ -276,8 +276,8 @@
 		5513592B17E440C500B41A90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D097C9C418FFCA8300B7E754 /* candy.jpg */,
-				D097C9C518FFCA8300B7E754 /* teddy.jpg */,
+				9F7D7C1E1900139100563523 /* candy.jpeg */,
+				9F7D7C1F1900139100563523 /* teddy.jpeg */,
 				D051168718F54DAA00511B9C /* 1.jpg */,
 				D051168818F54DAA00511B9C /* 2.jpg */,
 				D051168918F54DAA00511B9C /* 3.jpg */,
@@ -348,14 +348,14 @@
 		D0123CC418FF93B500E0B302 /* STDB */ = {
 			isa = PBXGroup;
 			children = (
-				D0123CC518FF93D500E0B302 /* STDb.h */,
-				D0123CC618FF93D500E0B302 /* STDb.m */,
-				D0123CC718FF93D500E0B302 /* STDbHandle.h */,
-				D0123CC818FF93D500E0B302 /* STDbHandle.m */,
-				D0123CC918FF93D500E0B302 /* STDbKit.h */,
-				D0123CCA18FF93D500E0B302 /* STDbObject.h */,
-				D0123CCB18FF93D500E0B302 /* STDbObject.m */,
-				D0123CCC18FF93D500E0B302 /* STDbVersion.h */,
+				9F7D7C10190012EA00563523 /* STDb.h */,
+				9F7D7C11190012EA00563523 /* STDb.m */,
+				9F7D7C12190012EA00563523 /* STDbHandle.h */,
+				9F7D7C13190012EA00563523 /* STDbHandle.m */,
+				9F7D7C14190012EA00563523 /* STDbKit.h */,
+				9F7D7C15190012EA00563523 /* STDbObject.h */,
+				9F7D7C16190012EA00563523 /* STDbObject.m */,
+				9F7D7C17190012EA00563523 /* STDbVersion.h */,
 			);
 			name = STDB;
 			sourceTree = "<group>";
@@ -363,8 +363,8 @@
 		D0123CD018FF949400E0B302 /* NSDate+Exts */ = {
 			isa = PBXGroup;
 			children = (
-				D0123CD118FF94AB00E0B302 /* NSDate+Exts.h */,
-				D0123CD218FF94AB00E0B302 /* NSDate+Exts.m */,
+				9F7D7C1B1900130C00563523 /* NSDate+Exts.h */,
+				9F7D7C1C1900130C00563523 /* NSDate+Exts.m */,
 			);
 			name = "NSDate+Exts";
 			sourceTree = "<group>";
@@ -489,7 +489,6 @@
 				D081A0A118E9179800AD8B00 /* button6.jpg in Resources */,
 				5513593B17E440C500B41A90 /* MainStoryboard.storyboard in Resources */,
 				5513594117E440EE00B41A90 /* 1.png in Resources */,
-				D097C9C718FFCA8300B7E754 /* teddy.jpg in Resources */,
 				D051168518F523F400511B9C /* expandGlyph.png in Resources */,
 				D0F08FEB18E5745600A1EF2D /* 40071-84.png in Resources */,
 				D0F08FE818E573CE00A1EF2D /* 40107-84.png in Resources */,
@@ -499,8 +498,8 @@
 				D079909F18EAC21E00AD13BA /* pre33.jpg in Resources */,
 				5513594217E440EE00B41A90 /* 3.png in Resources */,
 				9FBE7AC918EC3496007F6371 /* Images.xcassets in Resources */,
-				D097C9C618FFCA8300B7E754 /* candy.jpg in Resources */,
 				D051168C18F54DAA00511B9C /* 2.jpg in Resources */,
+				9F7D7C211900139100563523 /* teddy.jpeg in Resources */,
 				D079909D18EAC21E00AD13BA /* pre11.jpg in Resources */,
 				D051168D18F54DAA00511B9C /* 3.jpg in Resources */,
 				5513594317E440EE00B41A90 /* 2.png in Resources */,
@@ -510,6 +509,7 @@
 				D051167C18F4F88500511B9C /* home-7.png in Resources */,
 				5513595217E457E200B41A90 /* original@2x.png in Resources */,
 				5513595317E457E200B41A90 /* supportcat@2x.png in Resources */,
+				9F7D7C201900139100563523 /* candy.jpeg in Resources */,
 				5513595717E45E5100B41A90 /* introBg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,27 +523,27 @@
 			files = (
 				D081A09318E90ADD00AD8B00 /* CurledViewBase.m in Sources */,
 				5513593417E440C500B41A90 /* AppDelegate.m in Sources */,
-				D0123CD318FF94AB00E0B302 /* NSDate+Exts.m in Sources */,
 				D0123CD918FF9F7300E0B302 /* OrderViewController.m in Sources */,
+				9F7D7C1A190012EA00563523 /* STDbObject.m in Sources */,
 				D006A3D118E2BC890045BF0B /* CycleScrollView.m in Sources */,
 				D081A0A718E935B500AD8B00 /* CUSFlashLabel.m in Sources */,
 				5513593517E440C500B41A90 /* ViewController.m in Sources */,
 				9F7ADA7518E9A20C00543DE0 /* ButtonClickViewController.m in Sources */,
 				5513593617E440C500B41A90 /* EAIntroPage.m in Sources */,
 				D051168618F523F400511B9C /* HVTableView.m in Sources */,
-				D0123CCE18FF93D500E0B302 /* STDbHandle.m in Sources */,
 				D0F08FDA18E55B9400A1EF2D /* URBAlertView.m in Sources */,
 				D0C93B3518ED3ED300354A57 /* FRDLivelyButton.m in Sources */,
 				5513593717E440C500B41A90 /* EAIntroView.m in Sources */,
-				D0123CCF18FF93D500E0B302 /* STDbObject.m in Sources */,
 				5513593D17E440C500B41A90 /* main.m in Sources */,
 				D006A3D418E2BCD90045BF0B /* NSTimer+Addition.m in Sources */,
+				9F7D7C1D1900130C00563523 /* NSDate+Exts.m in Sources */,
 				D081A09518E90ADD00AD8B00 /* UIImageView+Curled.m in Sources */,
 				D006A3CE18E2BB9F0045BF0B /* HomeViewController.m in Sources */,
 				D0123CD618FF953900E0B302 /* MyOrder.m in Sources */,
 				D081A09418E90ADD00AD8B00 /* UIButton+Curled.m in Sources */,
 				D097C9CA18FFDC3B00B7E754 /* OrderDetailController.m in Sources */,
-				D0123CCD18FF93D500E0B302 /* STDb.m in Sources */,
+				9F7D7C19190012EA00563523 /* STDbHandle.m in Sources */,
+				9F7D7C18190012EA00563523 /* STDb.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

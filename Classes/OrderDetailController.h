@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+- (IBAction)backBtn:(id)sender;
 
 @property (nonatomic, strong) MyOrder *order;
 

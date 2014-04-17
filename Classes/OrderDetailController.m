@@ -10,9 +10,12 @@
 
 @interface OrderDetailController ()
 
+
 @end
 
 @implementation OrderDetailController
+
+@synthesize order;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,9 +30,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    _nameLabel.text = _order.name;
-    _descLabel.text = _order.desc;
-    _dateLabel.text = (NSString *)_order.lastmodifytime;
+    _nameLabel.text = order.name;
+    _descLabel.text = order.desc;
+    NSString *dateString = [NSDateFormatter localizedStringFromDate:order.lastmodifytime
+                                                          dateStyle:NSDateFormatterShortStyle
+                                                          timeStyle:NSDateFormatterFullStyle];
+    _dateLabel.text = dateString;
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,4 +44,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)backBtn:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
 @end

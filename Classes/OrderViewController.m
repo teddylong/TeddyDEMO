@@ -6,13 +6,16 @@
 //  Copyright (c) 2014年 T&C. All rights reserved.
 //
 
+#import "OrderViewController.h"
+#import "OrderDetailController.h"
 #import "MyOrder.h"
 #import "STDb.h"
-#import "OrderViewController.h"
 #import "NSDate+Exts.h"
+
 
 @interface OrderViewController ()
 
+@property (assign, nonatomic) NSInteger selectedRow;
 @property (strong, nonatomic) NSMutableArray *orders;
 
 @end
@@ -26,6 +29,14 @@
         // Custom initialization
     }
     return self;
+}
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+    _tableView.editing = YES;
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -61,13 +72,21 @@
     dateLabel.text = order.lastmodifytime.timeString;
     UIImageView *headImgView = (UIImageView *)[cell.contentView viewWithTag:4];
     headImgView.image = [UIImage imageWithData:order.image];
-
     
+
+    [cell setUserInteractionEnabled:YES];
     
     //cell.detailTextLabel.text = [NSString stringWithFormat:@"年龄:%d", user.age];
     
     return cell;
 }
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    _selectedRow = [indexPath row];
+    return indexPath;
+}
+
 
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -99,17 +118,22 @@
     return row == 1;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    _tableView.editing = YES;
-}
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSString *idetifier = segue.identifier;
+    
+    if ([idetifier isEqualToString:@"orderList_orderDetail"]) {
+        OrderDetailController *detail = segue.destinationViewController;
+        detail.order = _orders[_selectedRow];
+    }
 }
 
 @end
