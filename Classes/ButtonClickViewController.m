@@ -7,16 +7,19 @@
 //
 
 #import "ButtonClickViewController.h"
-
+#import "MyOrder.h"
 
 
 @interface ButtonClickViewController ()
+
+@property (strong, nonatomic) NSMutableArray *orders;
 
 @end
 
 @implementation ButtonClickViewController
 @synthesize valueLabeltext;
 @synthesize valueLabel;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,6 +40,7 @@
 	purchaseButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-LightItalic" size:11];
 	purchaseButton.backgroundColor = [UIColor grayColor];
 	[purchaseButton setTintColor:[UIColor whiteColor]];
+    [purchaseButton addTarget:self action:@selector(purchaseButtonClick) forControlEvents:UIControlEventTouchUpInside];
 	[cell.contentView addSubview:purchaseButton];
 	purchaseButton.tag = 10;
 	
@@ -46,6 +50,61 @@
 		purchaseButton.alpha = 0.8;
 		[cell.contentView viewWithTag:7].transform = CGAffineTransformMakeRotation(3.14);
 	}];
+}
+
+-(void)purchaseButtonClick
+{
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Message" message:@"Done" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"$1/Month",@"$10/Year", nil];
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString* msg;
+    if(buttonIndex == 1)
+    {
+        msg = [NSString stringWithFormat:@"Your has selected $1/Month"];
+        MyOrder *order = [[MyOrder alloc] init];
+        order.name = @"$1/Month";
+        order.desc = @"For one month, pay one dollar.";
+        UIImage* image = [UIImage imageNamed:@"teddy.jpg"];
+        order.image = UIImageJPEGRepresentation(image, 1.0);
+        order.lastmodifytime = [NSDate date];
+        
+        if ([order insertToDb])
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:msg message:@"Success" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        }
+        else
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message" message:@"Failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        }
+
+    }
+    else
+    {
+        msg = [NSString stringWithFormat:@"Your has selected $10/Year"];
+        MyOrder *order = [[MyOrder alloc] init];
+        order.name = @"$10/Year";
+        order.desc = @"For one year, pay ten dollar.";
+        UIImage* image = [UIImage imageNamed:@"candy.jpg"];
+        order.image = UIImageJPEGRepresentation(image, 1.0);
+        order.lastmodifytime = [NSDate date];
+        
+        if ([order insertToDb])
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:msg message:@"Success" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        }
+        else
+        {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message" message:@"Failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        }
+
+    }
 }
 
 -(void)tableView:(UITableView *)tableView collapseCell:(UITableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
