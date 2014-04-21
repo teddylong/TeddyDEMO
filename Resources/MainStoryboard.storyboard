@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Rg5-v2-WVv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Rg5-v2-WVv">
     <dependencies>
         <deployment version="1792" defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -202,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="-1966" y="-631"/>
         </scene>
-        <!--View Controller - Near By-->
+        <!--Near By View Controller - Near By-->
         <scene sceneID="rHj-s5-XcU">
             <objects>
-                <viewController id="GPd-HW-xnc" sceneMemberID="viewController">
+                <viewController id="GPd-HW-xnc" customClass="NearByViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k34-Cg-oDK"/>
                         <viewControllerLayoutGuide type="bottom" id="67K-Xh-XlF"/>
