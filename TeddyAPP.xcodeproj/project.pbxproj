@@ -38,6 +38,7 @@
 		9FBE7AC918EC3496007F6371 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE7AC818EC3496007F6371 /* Images.xcassets */; };
 		9FBE7ACD18EC35EC007F6371 /* StartImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE7ACC18EC35EC007F6371 /* StartImg.png */; };
 		9FC47E2C18E5A05000643FAA /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC47E2B18E5A05000643FAA /* Untitled.png */; };
+		9FD08BFD19056B6100A55ACD /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD08BFC19056B6100A55ACD /* Place.m */; };
 		D006A3CE18E2BB9F0045BF0B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D006A3CD18E2BB9F0045BF0B /* HomeViewController.m */; };
 		D006A3D118E2BC890045BF0B /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D006A3D018E2BC890045BF0B /* CycleScrollView.m */; };
 		D006A3D418E2BCD90045BF0B /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = D006A3D318E2BCD90045BF0B /* NSTimer+Addition.m */; };
@@ -140,6 +141,8 @@
 		9FBE7AC818EC3496007F6371 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TeddyAPP/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		9FBE7ACC18EC35EC007F6371 /* StartImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartImg.png; sourceTree = "<group>"; };
 		9FC47E2B18E5A05000643FAA /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
+		9FD08BFB19056B6100A55ACD /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		9FD08BFC19056B6100A55ACD /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 		D006A3CC18E2BB9F0045BF0B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D006A3CD18E2BB9F0045BF0B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D006A3CF18E2BC890045BF0B /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
@@ -304,6 +307,8 @@
 				D097C9C918FFDC3B00B7E754 /* OrderDetailController.m */,
 				D05BE19E1904ECD000DE91A3 /* NearByViewController.h */,
 				D05BE19F1904ECD000DE91A3 /* NearByViewController.m */,
+				9FD08BFB19056B6100A55ACD /* Place.h */,
+				9FD08BFC19056B6100A55ACD /* Place.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -602,6 +607,7 @@
 				D006A3D118E2BC890045BF0B /* CycleScrollView.m in Sources */,
 				D081A0A718E935B500AD8B00 /* CUSFlashLabel.m in Sources */,
 				5513593517E440C500B41A90 /* ViewController.m in Sources */,
+				9FD08BFD19056B6100A55ACD /* Place.m in Sources */,
 				9F7ADA7518E9A20C00543DE0 /* ButtonClickViewController.m in Sources */,
 				5513593617E440C500B41A90 /* EAIntroPage.m in Sources */,
 				D051168618F523F400511B9C /* HVTableView.m in Sources */,

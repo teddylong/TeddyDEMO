@@ -92,7 +92,7 @@
         return viewsArray[pageIndex];
     };
     self.mainScorllView.TapActionBlock = ^(NSInteger pageIndex){
-        NSLog(@"点击了第%d个",pageIndex);
+        //NSLog(@"点击了第%d个",pageIndex);
     };
     [self.view addSubview:self.mainScorllView];
     

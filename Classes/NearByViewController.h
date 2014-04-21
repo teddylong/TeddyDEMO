@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AFHTTPRequestOperationManager.h"
 
-@interface NearByViewController : UIViewController
+@interface NearByViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tabelView;
 
 @end
