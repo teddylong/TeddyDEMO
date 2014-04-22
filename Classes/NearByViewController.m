@@ -152,6 +152,8 @@
     //NSString *lat=[[NSString alloc] initWithFormat:@"%f",userLocation.coordinate.latitude];
     //NSString *lng=[[NSString alloc] initWithFormat:@"%f",userLocation.coordinate.longitude];
     
+    //Example:  39.915, 116.404   
+    
     CLLocationCoordinate2D coordinate;
     coordinate.longitude = userLocation.coordinate.longitude;
     coordinate.latitude = userLocation.coordinate.latitude;
@@ -163,7 +165,8 @@
     
     for (int i=1; i<10; i++) {
         NSString* location = [NSString stringWithFormat:@"location=%f,%f",coordinate.latitude,coordinate.longitude];
-        NSString* url = [NSString stringWithFormat:@"http://api.map.baidu.com/place/v2/search?ak=807c895c330132fd6ddbd6be67561039&output=json&query=bank&page_size=20&page_num=%d&scope=1&%@&radius=5000",i,location];
+        NSString* url = [NSString stringWithFormat:@"http://api.map.baidu.com/place/v2/search?ak=807c895c330132fd6ddbd6be67561039&output=json&query=银行&page_size=20&page_num=%d&scope=1&%@&radius=5000",i,location];
+        url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         
         [manager GET:url
           parameters:nil
