@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "AFHTTPRequestOperationManager.h"
+#import "ARClusteredMapView.h"
 
-@interface NearByViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@interface NearByViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tabelView;
+@property (nonatomic,strong) IBOutlet ARClusteredMapView *mapView;
 
 @end

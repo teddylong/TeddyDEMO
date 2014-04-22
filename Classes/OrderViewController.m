@@ -37,6 +37,7 @@
     _tableView.editing = YES;
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    [_tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
 }
 
 - (void)viewWillAppear:(BOOL)animated
