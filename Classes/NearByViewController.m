@@ -158,24 +158,43 @@
     
 	[self.mapView setRegion:MKCoordinateRegionMakeWithDistance(coordinate, 40000, 40000) animated:YES];
     
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSMutableArray *pins = [NSMutableArray array];
     
-    for(int i=0;i<300;i++) {
-        CGFloat latDelta = rand()*0.125/RAND_MAX - 0.08;
-        CGFloat lonDelta = rand()*0.130/RAND_MAX - 0.08;
+    for (int i=1; i<10; i++) {
+        NSString* location = [NSString stringWithFormat:@"location=%f,%f",coordinate.latitude,coordinate.longitude];
+        NSString* url = [NSString stringWithFormat:@"http://api.map.baidu.com/place/v2/search?ak=807c895c330132fd6ddbd6be67561039&output=json&query=bank&page_size=20&page_num=%d&scope=1&%@&radius=5000",i,location];
         
-        CGFloat lat = coordinate.latitude;
-        CGFloat lng = coordinate.longitude;
-        
-        CLLocationCoordinate2D newCoord = {lat+latDelta, lng+lonDelta};
-        ARClusteredAnnotation *pin = [[ARClusteredAnnotation alloc] init];
-        pin.title = [NSString stringWithFormat:@"Pin %i",i+1];;
-        pin.subtitle = [NSString stringWithFormat:@"Pin %i subtitle",i+1];
-        pin.coordinate = newCoord;
-        [pins addObject:pin];
+        [manager GET:url
+          parameters:nil
+             success:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+                 NSArray *results = [responseObject objectForKey:@"results"];
+                 //_places = [[NSMutableArray alloc] init];
+                 for(NSDictionary *result in results)
+                 {
+                     Place *place = [Place alloc];
+                     place.name = [result valueForKey:@"name"];
+                     place.address = [result valueForKey:@"address"];
+                     place.lat = [result valueForKeyPath:@"location.lat"];
+                     place.lng = [result valueForKeyPath:@"location.lng"];
+                     [_places addObject:place];
+                     
+                     CLLocationCoordinate2D newCoord = {[place.lat floatValue],[place.lng floatValue]};
+                     ARClusteredAnnotation *pin = [[ARClusteredAnnotation alloc] init];
+                     pin.title = place.name;
+                     pin.subtitle = place.address;
+                     pin.coordinate = newCoord;
+                     [pins addObject:pin];
+
+                 }
+                 [self.mapView addAnnotations:pins];
+                 [_tabelView reloadData];
+                 //_tabelView.dataSource = responseObject;
+             }   failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                 NSLog(@"Error: %@", error);
+             }];
     }
-    
-    [self.mapView addAnnotations:pins];
     
 }
 @end
