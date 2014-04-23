@@ -11,6 +11,11 @@
 #import "URBAlertView.h"
 #import "ARClusteredMapView.h"
 
+#import "MMProgressHUD.h"
+#import "MMProgressHUDOverlayView.h"
+#import "MMRadialProgressView.h"
+#import "MMLinearProgressView.h"
+
 @interface NearByViewController ()
 
 @property (assign, nonatomic) NSInteger selectedRow;
@@ -39,8 +44,8 @@
     _places = [[NSMutableArray alloc] init];
     [_tabelView setSeparatorInset:UIEdgeInsetsMake(0,0,0,0)];
     _tabelView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"congruent_outline.png"]];
+    
   
-
 }
 - (void)viewDidAppear:(BOOL)animated {
     
@@ -149,6 +154,16 @@
 
 -(void)GetPlaceAndTableData
 {
+    
+    [MMProgressHUD setDisplayStyle:MMProgressHUDDisplayStyleBordered];
+    [MMProgressHUD showWithTitle:@"Wait" status:@"Getting Data..."];
+    
+    double delayInSeconds = 2.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [MMProgressHUD dismissWithSuccess:@"Success!"];
+    });
+
     CLLocationCoordinate2D coordinate;
     coordinate.longitude = self.mapView.userLocation.coordinate.longitude;
     coordinate.latitude = self.mapView.userLocation.coordinate.latitude;
@@ -197,7 +212,6 @@
                  NSLog(@"Error: %@", error);
              }];
     }
-
 }
 
 @end

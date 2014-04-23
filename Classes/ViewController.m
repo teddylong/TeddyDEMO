@@ -64,13 +64,16 @@
     [button6 setContentMode:UIViewContentModeScaleToFill];
     [button6 setImage:[UIImage imageNamed:@"button6.jpg"] borderWidth:3.0 shadowDepth:15.0 controlPointXOffset:30.0 controlPointYOffset:70.0 forState:UIControlStateNormal];
     
-//    CUSFlashLabel *label11 = [[CUSFlashLabel alloc]initWithFrame:CGRectMake(label1.frame.origin.x, label1.frame.origin.y, label1.frame.size.width, label1.frame.size.height)];
-//    [label11 setFont:[UIFont systemFontOfSize:15]];
-//    [label11 setContentMode:UIViewContentModeTop];
-//    [label11 setText:@"Clean"];
-//    [label11 startAnimating];
-//    [self.view addSubview:label11];
-
+    CUSFlashLabel *labelHome = [[CUSFlashLabel alloc]initWithFrame:CGRectMake(116, 30, 90, 20)];
+    //[labelHome setFont:[UIFont systemFontOfSize:17]];
+    [labelHome setFont:[UIFont boldSystemFontOfSize:18]];
+    [labelHome setTextColor:[UIColor whiteColor]];
+    [labelHome setSpotlightColor:[UIColor blackColor]];
+    [labelHome setContentMode:UIViewContentModeTop];
+    [labelHome setText:@"TeddyAPP"];
+    [labelHome startAnimating];
+    [self.view addSubview:labelHome];
+    
     
     NSMutableArray *viewsArray = [@[] mutableCopy];
     NSArray *name = [[NSArray alloc] initWithObjects:@"pre11.jpg",@"pre22.jpg",@"pre33.jpg",@"pre44.jpg",@"pre55.jpg",@"pre66.jpg",nil];
@@ -98,8 +101,8 @@
     
     // Set for notification
     UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:60];
-    localNotification.alertBody = @"You haven't seen me SINCE 60s";
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:60 * 60];
+    localNotification.alertBody = @"You haven't seen me SINCE 1hr";
     localNotification.alertAction = @"Go To See!";
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
@@ -302,7 +305,7 @@
     [alertView setHandlerBlock:^(NSInteger buttonIndex, URBAlertView *alertView) {
         [alertView hideWithCompletionBlock:^{
             NSLog(@"Alert view closed.");
-            
+
             UIWebView*callWebview =[[UIWebView alloc] init];
             NSURL *telURL =[NSURL URLWithString:@"tel:15921266530"];
             [callWebview loadRequest:[NSURLRequest requestWithURL:telURL]];
@@ -311,7 +314,7 @@
         }];
     }];
     [alertView showWithAnimation:URBAlertAnimationSlideLeft];
-    
+
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

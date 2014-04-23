@@ -87,6 +87,16 @@
 		D0A8C58319062E61006B7BA3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0A8C58219062E61006B7BA3 /* MapKit.framework */; };
 		D0A8C59019064329006B7BA3 /* ARClusteredAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A8C58D19064329006B7BA3 /* ARClusteredAnnotation.m */; };
 		D0A8C59119064329006B7BA3 /* ARClusteredMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A8C58F19064329006B7BA3 /* ARClusteredMapView.m */; };
+		D0C6806E19079C440086A434 /* MMHud.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6805A19079C440086A434 /* MMHud.m */; };
+		D0C6806F19079C440086A434 /* MMLinearProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6805C19079C440086A434 /* MMLinearProgressView.m */; };
+		D0C6807019079C440086A434 /* MMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6805E19079C440086A434 /* MMProgressHUD.m */; };
+		D0C6807119079C440086A434 /* MMProgressHUD+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6806019079C440086A434 /* MMProgressHUD+Animations.m */; };
+		D0C6807219079C440086A434 /* MMProgressHUD+Class.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6806119079C440086A434 /* MMProgressHUD+Class.m */; };
+		D0C6807319079C440086A434 /* MMProgressHUDOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6806419079C440086A434 /* MMProgressHUDOverlayView.m */; };
+		D0C6807419079C440086A434 /* MMProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6806619079C440086A434 /* MMProgressHUDViewController.m */; };
+		D0C6807519079C440086A434 /* MMProgressHUDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6806819079C440086A434 /* MMProgressHUDWindow.m */; };
+		D0C6807619079C440086A434 /* MMRadialProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6806B19079C440086A434 /* MMRadialProgressView.m */; };
+		D0C6807719079C440086A434 /* MMVectorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C6806D19079C440086A434 /* MMVectorImage.m */; };
 		D0C93B3518ED3ED300354A57 /* FRDLivelyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C93B3418ED3ED300354A57 /* FRDLivelyButton.m */; };
 		D0C93B4018ED689700354A57 /* arrow 18.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C93B3F18ED689700354A57 /* arrow 18.png */; };
 		D0F08FD618E559DE00A1EF2D /* 36988-84.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F08FD518E559DE00A1EF2D /* 36988-84.png */; };
@@ -219,6 +229,27 @@
 		D0A8C58D19064329006B7BA3 /* ARClusteredAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARClusteredAnnotation.m; sourceTree = "<group>"; };
 		D0A8C58E19064329006B7BA3 /* ARClusteredMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARClusteredMapView.h; sourceTree = "<group>"; };
 		D0A8C58F19064329006B7BA3 /* ARClusteredMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARClusteredMapView.m; sourceTree = "<group>"; };
+		D0C6805919079C440086A434 /* MMHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHud.h; sourceTree = "<group>"; };
+		D0C6805A19079C440086A434 /* MMHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHud.m; sourceTree = "<group>"; };
+		D0C6805B19079C440086A434 /* MMLinearProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLinearProgressView.h; sourceTree = "<group>"; };
+		D0C6805C19079C440086A434 /* MMLinearProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLinearProgressView.m; sourceTree = "<group>"; };
+		D0C6805D19079C440086A434 /* MMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressHUD.h; sourceTree = "<group>"; };
+		D0C6805E19079C440086A434 /* MMProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMProgressHUD.m; sourceTree = "<group>"; };
+		D0C6805F19079C440086A434 /* MMProgressHUD+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMProgressHUD+Animations.h"; sourceTree = "<group>"; };
+		D0C6806019079C440086A434 /* MMProgressHUD+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMProgressHUD+Animations.m"; sourceTree = "<group>"; };
+		D0C6806119079C440086A434 /* MMProgressHUD+Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MMProgressHUD+Class.m"; sourceTree = "<group>"; };
+		D0C6806219079C440086A434 /* MMProgressHUDCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressHUDCommon.h; sourceTree = "<group>"; };
+		D0C6806319079C440086A434 /* MMProgressHUDOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressHUDOverlayView.h; sourceTree = "<group>"; };
+		D0C6806419079C440086A434 /* MMProgressHUDOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMProgressHUDOverlayView.m; sourceTree = "<group>"; };
+		D0C6806519079C440086A434 /* MMProgressHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressHUDViewController.h; sourceTree = "<group>"; };
+		D0C6806619079C440086A434 /* MMProgressHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMProgressHUDViewController.m; sourceTree = "<group>"; };
+		D0C6806719079C440086A434 /* MMProgressHUDWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMProgressHUDWindow.h; sourceTree = "<group>"; };
+		D0C6806819079C440086A434 /* MMProgressHUDWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMProgressHUDWindow.m; sourceTree = "<group>"; };
+		D0C6806919079C440086A434 /* MMProgressView-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMProgressView-Protocol.h"; sourceTree = "<group>"; };
+		D0C6806A19079C440086A434 /* MMRadialProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRadialProgressView.h; sourceTree = "<group>"; };
+		D0C6806B19079C440086A434 /* MMRadialProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRadialProgressView.m; sourceTree = "<group>"; };
+		D0C6806C19079C440086A434 /* MMVectorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMVectorImage.h; sourceTree = "<group>"; };
+		D0C6806D19079C440086A434 /* MMVectorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMVectorImage.m; sourceTree = "<group>"; };
 		D0C93B3418ED3ED300354A57 /* FRDLivelyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRDLivelyButton.m; sourceTree = "<group>"; };
 		D0C93B3618ED3EDE00354A57 /* FRDLivelyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRDLivelyButton.h; sourceTree = "<group>"; };
 		D0C93B3F18ED689700354A57 /* arrow 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow 18.png"; sourceTree = "<group>"; };
@@ -258,6 +289,7 @@
 		551358F217E4405F00B41A90 = {
 			isa = PBXGroup;
 			children = (
+				D0C6805819079C180086A434 /* MMProgressHUD */,
 				D0A8C58B19064329006B7BA3 /* ARClusteredMapView */,
 				D05BE1BE1904F63C00DE91A3 /* AFNetworking */,
 				D0123CD018FF949400E0B302 /* NSDate+Exts */,
@@ -502,6 +534,34 @@
 			path = ARClusteredMapView;
 			sourceTree = "<group>";
 		};
+		D0C6805819079C180086A434 /* MMProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				D0C6805919079C440086A434 /* MMHud.h */,
+				D0C6805A19079C440086A434 /* MMHud.m */,
+				D0C6805B19079C440086A434 /* MMLinearProgressView.h */,
+				D0C6805C19079C440086A434 /* MMLinearProgressView.m */,
+				D0C6805D19079C440086A434 /* MMProgressHUD.h */,
+				D0C6805E19079C440086A434 /* MMProgressHUD.m */,
+				D0C6805F19079C440086A434 /* MMProgressHUD+Animations.h */,
+				D0C6806019079C440086A434 /* MMProgressHUD+Animations.m */,
+				D0C6806119079C440086A434 /* MMProgressHUD+Class.m */,
+				D0C6806219079C440086A434 /* MMProgressHUDCommon.h */,
+				D0C6806319079C440086A434 /* MMProgressHUDOverlayView.h */,
+				D0C6806419079C440086A434 /* MMProgressHUDOverlayView.m */,
+				D0C6806519079C440086A434 /* MMProgressHUDViewController.h */,
+				D0C6806619079C440086A434 /* MMProgressHUDViewController.m */,
+				D0C6806719079C440086A434 /* MMProgressHUDWindow.h */,
+				D0C6806819079C440086A434 /* MMProgressHUDWindow.m */,
+				D0C6806919079C440086A434 /* MMProgressView-Protocol.h */,
+				D0C6806A19079C440086A434 /* MMRadialProgressView.h */,
+				D0C6806B19079C440086A434 /* MMRadialProgressView.m */,
+				D0C6806C19079C440086A434 /* MMVectorImage.h */,
+				D0C6806D19079C440086A434 /* MMVectorImage.m */,
+			);
+			name = MMProgressHUD;
+			sourceTree = "<group>";
+		};
 		D0C93B3318ED3EBA00354A57 /* LivelyButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,7 +684,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C6807019079C440086A434 /* MMProgressHUD.m in Sources */,
 				D05BE1D81904F63C00DE91A3 /* AFURLRequestSerialization.m in Sources */,
+				D0C6807219079C440086A434 /* MMProgressHUD+Class.m in Sources */,
 				D081A09318E90ADD00AD8B00 /* CurledViewBase.m in Sources */,
 				5513593417E440C500B41A90 /* AppDelegate.m in Sources */,
 				D0123CD918FF9F7300E0B302 /* OrderViewController.m in Sources */,
@@ -634,6 +696,8 @@
 				D081A0A718E935B500AD8B00 /* CUSFlashLabel.m in Sources */,
 				5513593517E440C500B41A90 /* ViewController.m in Sources */,
 				9FD08BFD19056B6100A55ACD /* Place.m in Sources */,
+				D0C6807519079C440086A434 /* MMProgressHUDWindow.m in Sources */,
+				D0C6807619079C440086A434 /* MMRadialProgressView.m in Sources */,
 				9F7ADA7518E9A20C00543DE0 /* ButtonClickViewController.m in Sources */,
 				5513593617E440C500B41A90 /* EAIntroPage.m in Sources */,
 				D051168618F523F400511B9C /* HVTableView.m in Sources */,
@@ -641,17 +705,22 @@
 				D0F08FDA18E55B9400A1EF2D /* URBAlertView.m in Sources */,
 				D0C93B3518ED3ED300354A57 /* FRDLivelyButton.m in Sources */,
 				D05BE1DA1904F63C00DE91A3 /* AFURLSessionManager.m in Sources */,
+				D0C6806E19079C440086A434 /* MMHud.m in Sources */,
+				D0C6807119079C440086A434 /* MMProgressHUD+Animations.m in Sources */,
 				5513593717E440C500B41A90 /* EAIntroView.m in Sources */,
 				D0A8C59119064329006B7BA3 /* ARClusteredMapView.m in Sources */,
 				5513593D17E440C500B41A90 /* main.m in Sources */,
+				D0C6807319079C440086A434 /* MMProgressHUDOverlayView.m in Sources */,
 				D006A3D418E2BCD90045BF0B /* NSTimer+Addition.m in Sources */,
 				9F7D7C1D1900130C00563523 /* NSDate+Exts.m in Sources */,
+				D0C6807419079C440086A434 /* MMProgressHUDViewController.m in Sources */,
 				D081A09518E90ADD00AD8B00 /* UIImageView+Curled.m in Sources */,
 				D05BE1A01904ECD000DE91A3 /* NearByViewController.m in Sources */,
 				D006A3CE18E2BB9F0045BF0B /* HomeViewController.m in Sources */,
 				D0A8C59019064329006B7BA3 /* ARClusteredAnnotation.m in Sources */,
 				D0123CD618FF953900E0B302 /* MyOrder.m in Sources */,
 				D05BE1D61904F63C00DE91A3 /* AFSecurityPolicy.m in Sources */,
+				D0C6807719079C440086A434 /* MMVectorImage.m in Sources */,
 				D05BE1D31904F63C00DE91A3 /* AFHTTPRequestOperationManager.m in Sources */,
 				D05BE1D41904F63C00DE91A3 /* AFHTTPSessionManager.m in Sources */,
 				D081A09418E90ADD00AD8B00 /* UIButton+Curled.m in Sources */,
@@ -659,6 +728,7 @@
 				D05BE1D21904F63C00DE91A3 /* AFHTTPRequestOperation.m in Sources */,
 				9F7D7C19190012EA00563523 /* STDbHandle.m in Sources */,
 				D05BE1D91904F63C00DE91A3 /* AFURLResponseSerialization.m in Sources */,
+				D0C6806F19079C440086A434 /* MMLinearProgressView.m in Sources */,
 				9F7D7C18190012EA00563523 /* STDb.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
