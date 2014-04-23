@@ -14,5 +14,6 @@
 @interface NearByViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tabelView;
 @property (nonatomic,strong) IBOutlet ARClusteredMapView *mapView;
+- (IBAction)refreshBtn:(id)sender;
 
 @end

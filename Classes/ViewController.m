@@ -96,6 +96,18 @@
     };
     [self.view addSubview:self.mainScorllView];
     
+    // Set for notification
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:60];
+    localNotification.alertBody = @"You haven't seen me SINCE 60s";
+    localNotification.alertAction = @"Go To See!";
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+    
+    
 }
 
 
