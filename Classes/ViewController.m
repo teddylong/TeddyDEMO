@@ -105,12 +105,10 @@
     localNotification.alertBody = @"You haven't seen me SINCE 1hr";
     localNotification.alertAction = @"Go To See!";
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
-    localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
-    
+    //localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+    localNotification.applicationIconBadgeNumber = 1;
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-    
-    
-    
+ 
 }
 
 
