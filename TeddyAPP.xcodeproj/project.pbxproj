@@ -45,6 +45,10 @@
 		D0123CC318FF935D00E0B302 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0123CC218FF935D00E0B302 /* libsqlite3.dylib */; };
 		D0123CD618FF953900E0B302 /* MyOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = D0123CD518FF953900E0B302 /* MyOrder.m */; };
 		D0123CD918FF9F7300E0B302 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0123CD818FF9F7300E0B302 /* OrderViewController.m */; };
+		D0302C83190A39F6004DF1AF /* 146-gavel.png in Resources */ = {isa = PBXBuildFile; fileRef = D0302C80190A39F6004DF1AF /* 146-gavel.png */; };
+		D0302C84190A39F6004DF1AF /* 162-receipt.png in Resources */ = {isa = PBXBuildFile; fileRef = D0302C81190A39F6004DF1AF /* 162-receipt.png */; };
+		D0302C85190A39F6004DF1AF /* 171-sun.png in Resources */ = {isa = PBXBuildFile; fileRef = D0302C82190A39F6004DF1AF /* 171-sun.png */; };
+		D0302C87190A3B7D004DF1AF /* 02-redo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0302C86190A3B7D004DF1AF /* 02-redo.png */; };
 		D051167B18F4F88500511B9C /* compass-direction-7.png in Resources */ = {isa = PBXBuildFile; fileRef = D051167818F4F88500511B9C /* compass-direction-7.png */; };
 		D051167C18F4F88500511B9C /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = D051167918F4F88500511B9C /* home-7.png */; };
 		D051167D18F4F88500511B9C /* message-7.png in Resources */ = {isa = PBXBuildFile; fileRef = D051167A18F4F88500511B9C /* message-7.png */; };
@@ -168,6 +172,10 @@
 		D0123CD518FF953900E0B302 /* MyOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrder.m; sourceTree = "<group>"; };
 		D0123CD718FF9F7300E0B302 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
 		D0123CD818FF9F7300E0B302 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		D0302C80190A39F6004DF1AF /* 146-gavel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "146-gavel.png"; sourceTree = "<group>"; };
+		D0302C81190A39F6004DF1AF /* 162-receipt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "162-receipt.png"; sourceTree = "<group>"; };
+		D0302C82190A39F6004DF1AF /* 171-sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "171-sun.png"; sourceTree = "<group>"; };
+		D0302C86190A3B7D004DF1AF /* 02-redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-redo.png"; sourceTree = "<group>"; };
 		D051167818F4F88500511B9C /* compass-direction-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass-direction-7.png"; sourceTree = "<group>"; };
 		D051167918F4F88500511B9C /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
 		D051167A18F4F88500511B9C /* message-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message-7.png"; sourceTree = "<group>"; };
@@ -372,6 +380,10 @@
 		5513592B17E440C500B41A90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D0302C86190A3B7D004DF1AF /* 02-redo.png */,
+				D0302C80190A39F6004DF1AF /* 146-gavel.png */,
+				D0302C81190A39F6004DF1AF /* 162-receipt.png */,
+				D0302C82190A39F6004DF1AF /* 171-sun.png */,
 				D05BE200190615AA00DE91A3 /* congruent_outline.png */,
 				9F7D7C1E1900139100563523 /* candy.jpeg */,
 				9F7D7C1F1900139100563523 /* teddy.jpeg */,
@@ -638,6 +650,7 @@
 				D0F08FD618E559DE00A1EF2D /* 36988-84.png in Resources */,
 				D07990A418EAC31E00AD13BA /* pre22.jpg in Resources */,
 				D051167D18F4F88500511B9C /* message-7.png in Resources */,
+				D0302C83190A39F6004DF1AF /* 146-gavel.png in Resources */,
 				5513593817E440C500B41A90 /* Default-568h@2x.png in Resources */,
 				D051168E18F54DAA00511B9C /* 4.jpg in Resources */,
 				D081A09718E912D500AD8B00 /* button1.jpg in Resources */,
@@ -648,7 +661,9 @@
 				D081A09F18E9179800AD8B00 /* button4.jpg in Resources */,
 				D081A0A018E9179800AD8B00 /* button5.jpg in Resources */,
 				5513593A17E440C500B41A90 /* Default@2x.png in Resources */,
+				D0302C85190A39F6004DF1AF /* 171-sun.png in Resources */,
 				D081A0A118E9179800AD8B00 /* button6.jpg in Resources */,
+				D0302C87190A3B7D004DF1AF /* 02-redo.png in Resources */,
 				5513593B17E440C500B41A90 /* MainStoryboard.storyboard in Resources */,
 				5513594117E440EE00B41A90 /* 1.png in Resources */,
 				D051168518F523F400511B9C /* expandGlyph.png in Resources */,
@@ -659,6 +674,7 @@
 				D07990A118EAC21E00AD13BA /* pre55.jpg in Resources */,
 				D079909F18EAC21E00AD13BA /* pre33.jpg in Resources */,
 				D05BE201190615AA00DE91A3 /* congruent_outline.png in Resources */,
+				D0302C84190A39F6004DF1AF /* 162-receipt.png in Resources */,
 				5513594217E440EE00B41A90 /* 3.png in Resources */,
 				9FBE7AC918EC3496007F6371 /* Images.xcassets in Resources */,
 				D051168C18F54DAA00511B9C /* 2.jpg in Resources */,

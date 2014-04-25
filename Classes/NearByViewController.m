@@ -141,7 +141,7 @@
     
     if(_latestCoordinate == nil)
     {
-        [self GetPlaceAndTableData];
+        [self GetPlaceAndTableData:@"银行"];
     }
 }
 - (IBAction)refreshBtn:(id)sender {
@@ -149,10 +149,31 @@
     [_places removeAllObjects];
     [_tabelView reloadData];
     [self.mapView removeAllAnnotations];
-    [self GetPlaceAndTableData];
+    [self GetPlaceAndTableData:@"银行"];
 }
 
--(void)GetPlaceAndTableData
+- (IBAction)bankBtn:(id)sender {
+    [_places removeAllObjects];
+    [_tabelView reloadData];
+    [self.mapView removeAllAnnotations];
+    [self GetPlaceAndTableData:@"银行"];
+}
+
+- (IBAction)hotelBtn:(id)sender {
+    [_places removeAllObjects];
+    [_tabelView reloadData];
+    [self.mapView removeAllAnnotations];
+    [self GetPlaceAndTableData:@"酒店"];
+}
+
+- (IBAction)gasBtn:(id)sender {
+    [_places removeAllObjects];
+    [_tabelView reloadData];
+    [self.mapView removeAllAnnotations];
+    [self GetPlaceAndTableData:@"加油站"];
+}
+
+-(void)GetPlaceAndTableData:(NSString*) name
 {
     
     [MMProgressHUD setDisplayStyle:MMProgressHUDDisplayStyleBordered];
@@ -178,7 +199,7 @@
     for (int i=1; i<10; i++)
     {
         NSString* location = [NSString stringWithFormat:@"location=%f,%f",coordinate.latitude,coordinate.longitude];
-        NSString* url = [NSString stringWithFormat:@"http://api.map.baidu.com/place/v2/search?ak=807c895c330132fd6ddbd6be67561039&output=json&query=银行&page_size=20&page_num=%d&scope=1&%@&radius=5000",i,location];
+        NSString* url = [NSString stringWithFormat:@"http://api.map.baidu.com/place/v2/search?ak=807c895c330132fd6ddbd6be67561039&output=json&query=%@&page_size=20&page_num=%d&scope=1&%@&radius=5000",name,i,location];
         url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         
         [manager GET:url

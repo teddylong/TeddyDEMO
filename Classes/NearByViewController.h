@@ -15,5 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *tabelView;
 @property (nonatomic,strong) IBOutlet ARClusteredMapView *mapView;
 - (IBAction)refreshBtn:(id)sender;
+- (IBAction)bankBtn:(id)sender;
+- (IBAction)hotelBtn:(id)sender;
+- (IBAction)gasBtn:(id)sender;
 
 @end
