@@ -38,6 +38,7 @@
     UIColor *viewBg = [UIColor colorWithPatternImage:[UIImage imageNamed:@"stardust.png"]];
     self.view.backgroundColor = viewBg;
     
+    
     self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:[UIImage imageNamed:@"home-7.png"] selectedImage:[UIImage imageNamed:@"home-7.png"]];
     self.tabBarItem.badgeValue = @"N";
     
